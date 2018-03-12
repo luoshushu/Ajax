@@ -166,15 +166,20 @@ xhr.send()
 - status: HTTP响应状态代码
 - responseText：响应文本（内容）
 - readySteat ： 交互流程（1，2，3，4）
+
 0 － （未初始化）还没有调用send()方法 
+
 1 － （载入）已调用send()方法，正在发送请求 
+
 2 － （载入完成）send()方法执行完成，已经接收到全部响应内容 
+
 3 － （交互）正在解析响应内容 
+
 4 － （完成）响应内容解析完成，可以在客户端调用了 
 
 
 
-![GET传过来的数据-图1](https://upload-images.jianshu.io/upload_images/5691870-5d78719f93af1a6c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![GET传过来的数据-图1](https://upload-images.jianshu.io/upload_images/5691870-5d78719f93af1a6c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/500)
 
 
 
