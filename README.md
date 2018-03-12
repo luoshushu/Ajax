@@ -1,14 +1,14 @@
-#####Ajax的全称Asynchronous JavaScript + XML(异步JavaScript和XML)。
+##### Ajax的全称Asynchronous JavaScript + XML(异步JavaScript和XML)。
 
-###什么是Ajax？
+### 什么是Ajax？
 
 Ajax是一种技术方案，但并不是一种新技术。它依赖现有的CSS/HTML/JavaScript，而其中最核心的依赖是浏览器提供的**XMLHttpRequest**对象，是这个对象使得浏览器可以发出HTTP请求与接收HTTP响应。实现了在页面不刷新个情况下和服务器进行数据交互。
 
 
 
-##怎么实现？
+## 怎么实现？
 
-###栗子：
+### 栗子：
 
 hello.json：
 ```
@@ -39,7 +39,7 @@ xhr.send()
 
 
 
-###同步的获取：
+### 同步的获取：
 ```
 var xhr = new XMLHttpRequest()
 xhr.open('GET','/hello.json',false)  //false同步方式
@@ -55,7 +55,7 @@ console.log(data)
 
 缺点：如果网络请求特别慢，页面就卡住一直等待数据的请求，用户就无法操作。所以我们只能用异步的方式（不推荐同步）。
 
-###异步的获取：
+### 异步的获取：
 
 ```
   <script>
@@ -77,7 +77,7 @@ console.log(data)
 
 
 
-###常见的Ajax用法：
+### 常见的Ajax用法：
 ```
 <script>
   //生成一个对象
@@ -118,7 +118,7 @@ console.log(data)
 </script>
 
 ```
-###换一种写法
+### 换一种写法
 ```
 var xhr = new XMLHttpRequest()
 xhr.open('GET', 'http://hello.php', true)
@@ -138,7 +138,7 @@ xhr.onerror = function(){
 xhr.send()
 ```
 
-###POST写法：
+### POST写法：
 ```
  var xhr = new XMLHttpRequest() 
   xhr.open('POST', '/hello.json', true)
@@ -154,7 +154,7 @@ xhr.send()
   })
 ```
 
-###一些解释：
+### 一些解释：
 
 - new XMLHttpRequest() ：生成一个对象
 
@@ -178,7 +178,7 @@ xhr.send()
 
 
 
-###封装一个Ajax:
+### 封装一个Ajax:
 ```
 /*封装一个Ajax*/
 function ajax(opts){
@@ -249,7 +249,7 @@ ajax({
 ```
 
 
-[全部代码地址]()
+[全部代码地址](https://github.com/luoshushu/Ajax)
 
 *PS：每个字都看完才明白,看完还不明白Ajax请点击下列文章*
 
